@@ -4,9 +4,9 @@ var working_array = []; // array that will change based on user input
 var total_col_count; // total number of columns in working array
 var last_modified; // when the data was last modified
 var sort_by = 9; // sorting by date for now but will be hooked up to a function parameter
-var total_affected = 0;
-var year_low = 0;
-var year_high = 0;
+var total_affected = 0; // total number of individuals affected
+var year_low = 0; // earliest incident date
+var year_high = 0; // latest incident date
 
 // Sort results by date and output them
 
@@ -33,7 +33,7 @@ document.getElementById('infoDiv').innerHTML = '<p>JSON data last_modified:<br>'
 } // end load by date function
 
 
-// pull json dada and populate data_array array
+// pull json data and populate data_array
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
