@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles\css\bootstrap.css" />
+    <link rel="styleheet" href="styles\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="styles\bootstrap-sass-3.3.7" />
+    <link rel="stylesheet" href="styles\style.css" />
+    <script src="js/wosa.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">HIPPA WALL OF SHAME</h1>
+    </header>
+
+    <div class="wrapper">
+        <h2 class="brkNws">Latest entry data will go here... will say 'BREAKING' if it was in the last two days.</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <button class="total" onclick="loadByDate(9)">Total Individuals<br> Impacted-To-Date</button>
+            </div>
+            <!--closes first button-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <button class="bbt">Breach By Type</button>
+            </div>
+            <!--closes second button-->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <button class="bbs">Breach By State</button>
+            </div>
+            <!--closes third button-->
+        </div>
+        <!--closes all button row-->
+           <div id="infoDiv" style="margin: 10px;"></div><hr>
+
+        <div class="jumbotron" id="description_jumbotron">
+        <p>This page shows a comprehensive list of security breaches of unsecured protected health information affecting 500 or more individuals since 2009.</p>
+        </div>
+        <!--closes jumbotron-->
+    </div>
+    <!--closes container-->
+    <section class="custom">
+        <h3 class="cs">Custom Search</h3>
+        <form action="#">
+            <input type="search" name="data" value="any" class="search1">
+
+            <input type="submit" value="Submit" class="sub">
+        </form>
+    </section>
+    <footer>
+        <h5> 2017 &copy TeamB</h5>
+    </footer>
+    <script src="styles\jquery-3.2.1.min.js"></script>
+</body>
+
+</html>
